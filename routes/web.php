@@ -1,20 +1,19 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\ServicesController;
+use App\Http\Controllers\Frontend\QuoteController;
+use App\Http\Controllers\Frontend\ContactController;
 
-Route::get('/', function () {
-    return view('welcome');
+// Frontend routes
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/services', [ServicesController::class, 'index'])->name('services');
+Route::controller(QuoteController::class)->group(function () {
+    Route::get('/quote', 'index')->name('quote.index');
+    Route::post('/quote', 'store')->name('quote.store');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-require __DIR__.'/auth.php';
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
