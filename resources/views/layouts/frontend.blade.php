@@ -7,6 +7,8 @@
 
     <title>{{ config('app.name', 'LTB Translation') }}</title>
 
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+
     <!-- Scripts and Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
