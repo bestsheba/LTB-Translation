@@ -1,25 +1,21 @@
 @extends('layouts.frontend')
-
 @section('content')
-    <div class="min-h-screen bg-gray-50">
-        <!-- Header Section -->
-        <div class="relative py-12 sm:py-16 lg:py-20 bg-indigo-600 mb-8">
-            <div class="absolute inset-0 bg-gradient-to-r from-indigo-800 to-indigo-600 opacity-90"></div>
-            <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white text-center">
-                    Get a Free Translation Quote
-                </h1>
-                <p class="mt-4 sm:mt-6 max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-indigo-100 text-center">
-                    Please fill out the form below or contact us via WhatsApp to get a quick quotation.
-                </p>
-            </div>
+    <div class="relative py-12 sm:py-16 lg:py-20 mt-20 bg-indigo-600 mb-8">
+        <div class="absolute inset-0 bg-gradient-to-r from-indigo-800 to-indigo-600 opacity-90"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white text-center">
+                Get a Free Translation Quote
+            </h1>
+            <p class="mt-4 sm:mt-6 mx-auto text-base sm:text-lg md:text-xl text-indigo-100 text-center">
+                Please fill out the form below or contact us via WhatsApp to get a quick quotation.
+            </p>
         </div>
-
-        <!-- Form Section -->
-        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-            <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6 sm:p-8">
+    </div>
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6 sm:p-8">
             @if (session('success'))
-                <div class="mb-8 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded relative" role="alert">
+                <div class="mb-8 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded relative"
+                    role="alert">
                     <p class="font-medium">{{ session('success') }}</p>
                 </div>
             @endif
@@ -63,7 +59,7 @@
                     <select name="document_type" id="document_type" required
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-2">
                         <option value="">Select document type</option>
-                        @foreach($documentTypes as $type)
+                        @foreach ($documentTypes as $type)
                             <option value="{{ $type }}" {{ old('document_type') == $type ? 'selected' : '' }}>
                                 {{ $type }}
                             </option>
@@ -81,8 +77,9 @@
                         <select name="source_language" id="source_language" required
                             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-2">
                             <option value="">Select source language</option>
-                            @foreach($languages as $language)
-                                <option value="{{ $language }}" {{ old('source_language') == $language ? 'selected' : '' }}>
+                            @foreach ($languages as $language)
+                                <option value="{{ $language }}"
+                                    {{ old('source_language') == $language ? 'selected' : '' }}>
                                     {{ $language }}
                                 </option>
                             @endforeach
@@ -97,8 +94,9 @@
                         <select name="target_language" id="target_language" required
                             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-2">
                             <option value="">Select target language</option>
-                            @foreach($languages as $language)
-                                <option value="{{ $language }}" {{ old('target_language') == $language ? 'selected' : '' }}>
+                            @foreach ($languages as $language)
+                                <option value="{{ $language }}"
+                                    {{ old('target_language') == $language ? 'selected' : '' }}>
                                     {{ $language }}
                                 </option>
                             @endforeach
@@ -115,7 +113,8 @@
                     <div class="mt-1">
                         <input type="file" name="document" id="document"
                             class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100">
-                        <p class="mt-1 text-sm text-gray-500">Max file size: 10MB. Supported formats: PDF, DOC, DOCX, TXT, RTF</p>
+                        <p class="mt-1 text-sm text-gray-500">Max file size: 10MB. Supported formats: PDF, DOC, DOCX, TXT,
+                            RTF</p>
                     </div>
                     @error('document')
                         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -143,7 +142,6 @@
 
             <div class="mt-8 text-center text-sm text-gray-500">
                 We'll respond promptly with a detailed quotation and delivery time.
-            </div>
             </div>
         </div>
     </div>
