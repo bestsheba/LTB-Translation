@@ -1,14 +1,14 @@
 @extends('frontend.layouts.frontend')
-@section('title', 'Contact Us')
+@section('title', __('messages.contact_page_title'))
 @section('content')
     <div class="relative py-12 sm:py-16 lg:py-20 mt-20 bg-indigo-600 mb-8">
         <div class="absolute inset-0 bg-gradient-to-r from-indigo-800 to-indigo-600 opacity-90"></div>
         <div class="relative mx-auto px-4 sm:px-6 lg:px-8">
             <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white text-center">
-                Get in Touch
+                {{ __('messages.get_in_touch_heading') }}
             </h1>
             <p class="mt-4 sm:mt-6 max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-indigo-100 text-center">
-                We're here to help with all your translation needs
+                {{ __('messages.here_to_help') }}
             </p>
         </div>
     </div>
@@ -17,10 +17,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Contact Details -->
                 <div class="space-y-6">
-                    <h2 class="text-2xl font-bold text-gray-900">Contact Information</h2>
+                    <h2 class="text-2xl font-bold text-gray-900">{{ __('messages.contact_information') }}</h2>
 
                     <!-- Address -->
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
                         <div class="flex-shrink-0">
                             <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -31,13 +31,13 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-gray-900">Address</h3>
-                            <p class="mt-1 text-gray-600">Dabab Street, Sulaymaniyah, Riyadh, Saudi Arabia</p>
+                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.address') }}</h3>
+                            <p class="mt-1 text-gray-600">{{ __('messages.address_value') }}</p>
                         </div>
                     </div>
 
                     <!-- Phone -->
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
                         <div class="flex-shrink-0">
                             <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-gray-900">Phone</h3>
+                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.phone') }}</h3>
                             <p class="mt-1 text-gray-600">
                                 <a href="tel:0559548756" class="hover:text-indigo-600">0559548756</a>
                             </p>
@@ -54,7 +54,7 @@
                     </div>
 
                     <!-- WhatsApp -->
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
                         <div class="flex-shrink-0">
                             <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -63,7 +63,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-gray-900">WhatsApp</h3>
+                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.whatsapp') }}</h3>
                             <p class="mt-1 text-gray-600">
                                 <a href="https://wa.me/966559548756" target="_blank"
                                     class="hover:text-indigo-600">0559548756</a>
@@ -72,7 +72,7 @@
                     </div>
 
                     <!-- Email -->
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
                         <div class="flex-shrink-0">
                             <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -81,7 +81,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-gray-900">Email</h3>
+                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.email') }}</h3>
                             <p class="mt-1 text-gray-600">
                                 <a href="mailto:lexicologytranslation@gmail.com"
                                     class="hover:text-indigo-600">lexicologytranslation@gmail.com</a>
@@ -90,7 +90,7 @@
                     </div>
 
                     <!-- Working Hours -->
-                    <div class="flex items-start space-x-3">
+                    <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
                         <div class="flex-shrink-0">
                             <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -99,10 +99,10 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-gray-900">Working Hours</h3>
+                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.working_hours') }}</h3>
                             <div class="mt-1 space-y-1 text-gray-600">
-                                <p>Saturday – Thursday: 9:00 AM – 10:00 PM</p>
-                                <p>Friday: Closed</p>
+                                <p>{{ __('messages.saturday_thursday') }}</p>
+                                <p>{{ __('messages.friday_closed') }}</p>
                             </div>
                         </div>
                     </div>

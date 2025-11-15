@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* RTL Utilities */
+@import './rtl.css';
+
 /* Custom styles */
 /* .hero-pattern {
     background-color: #ffffff;

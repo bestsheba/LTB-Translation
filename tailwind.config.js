@@ -18,4 +18,9 @@ export default {
     },
 
     plugins: [forms],
+    
+    corePlugins: {
+        direction: true,
+    },
 };
+

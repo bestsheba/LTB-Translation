@@ -6,6 +6,10 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\ServicesController;
 use App\Http\Controllers\Frontend\QuoteController;
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\LanguageController;
+
+// Language switching route
+Route::get('/language/{language}', [LanguageController::class, 'switch'])->name('language.switch');
 
 // Frontend routes
 Route::get('/', [HomeController::class, 'index']);

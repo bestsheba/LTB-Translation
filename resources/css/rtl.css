@@ -1,0 +1,189 @@
+/**
+ * RTL (Right-to-Left) CSS Utilities for Arabic and RTL Languages
+ * This file handles spacing reversal for RTL layouts
+ */
+
+[dir="rtl"] .text-left {
+    text-align: right;
+}
+
+[dir="rtl"] .text-right {
+    text-align: left;
+}
+
+[dir="rtl"] .lg\:text-left {
+    text-align: right;
+}
+
+[dir="rtl"] .lg\:text-right {
+    text-align: left;
+}
+
+/* Margin reversal */
+[dir="rtl"] .ml-0 {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .ml-1 {
+    margin-right: 0.25rem;
+    margin-left: auto;
+}
+
+[dir="rtl"] .ml-2 {
+    margin-right: 0.5rem;
+    margin-left: auto;
+}
+
+[dir="rtl"] .ml-3 {
+    margin-right: 0.75rem;
+    margin-left: auto;
+}
+
+[dir="rtl"] .ml-4 {
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+[dir="rtl"] .ml-6 {
+    margin-right: 1.5rem;
+    margin-left: auto;
+}
+
+[dir="rtl"] .ml-8 {
+    margin-right: 2rem;
+    margin-left: auto;
+}
+
+[dir="rtl"] .mr-0 {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-1 {
+    margin-left: 0.25rem;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-2 {
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-3 {
+    margin-left: 0.75rem;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-4 {
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-6 {
+    margin-left: 1.5rem;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-8 {
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+/* Padding reversal */
+[dir="rtl"] .pl-2 {
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] .pl-3 {
+    padding-right: 0.75rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] .pl-4 {
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] .pl-6 {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] .pl-8 {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] .pr-2 {
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+[dir="rtl"] .pr-3 {
+    padding-left: 0.75rem;
+    padding-right: 0;
+}
+
+[dir="rtl"] .pr-4 {
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+[dir="rtl"] .pr-6 {
+    padding-left: 1.5rem;
+    padding-right: 0;
+}
+
+[dir="rtl"] .pr-8 {
+    padding-left: 2rem;
+    padding-right: 0;
+}
+
+/* Flex justification reversal */
+[dir="rtl"] .justify-start {
+    justify-content: flex-end;
+}
+
+[dir="rtl"] .justify-end {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .lg\:justify-start {
+    justify-content: flex-end;
+}
+
+[dir="rtl"] .lg\:justify-end {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .lg\:text-left {
+    text-align: right;
+}
+
+/* Space between children reversal */
+[dir="rtl"] .space-x-8> :not([hidden])~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 2rem;
+}
+
+[dir="rtl"] .space-x-6> :not([hidden])~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+[dir="rtl"] .space-x-4> :not([hidden])~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+[dir="rtl"] .space-x-3> :not([hidden])~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 0.75rem;
+}
+
+[dir="rtl"] .space-x-2> :not([hidden])~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}

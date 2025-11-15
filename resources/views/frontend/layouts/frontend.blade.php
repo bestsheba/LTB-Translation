@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <x-meta-tag />
@@ -19,10 +19,9 @@
                         <img class="w-60 bg-white" src="{{ asset('logo.png') }}" alt="" srcset="">
                     </a>
                     <p class="text-sm leading-relaxed">
-                        Professional translation and localization services in over 100 languages.
-                        Connect globally with confidence.
+                        {{ __('messages.professional_translation_services') }}
                     </p>
-                    <div class="flex space-x-4 mt-4">
+                    <div class="flex space-x-4 rtl:space-x-reverse mt-4">
                         <a href="#" class="hover:text-green-400" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -37,45 +36,52 @@
 
                 <!-- Services -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">{{ __('messages.services') }}</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-green-400">Document Translation</a></li>
-                        <li><a href="#" class="hover:text-green-400">Website Localization</a></li>
-                        <li><a href="#" class="hover:text-green-400">Subtitling & Transcription</a></li>
-                        <li><a href="#" class="hover:text-green-400">Certified Translations</a></li>
+                        <li><a href="#"
+                                class="hover:text-green-400">{{ __('messages.document_translation_footer') }}</a></li>
+                        <li><a href="#" class="hover:text-green-400">{{ __('messages.website_localization') }}</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-green-400">{{ __('messages.subtitling_transcription') }}</a></li>
+                        <li><a href="#"
+                                class="hover:text-green-400">{{ __('messages.certified_translations_footer') }}</a></li>
                     </ul>
                 </div>
 
                 <!-- Company -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">{{ __('messages.company') }}</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="{{ route('about') }}" class="hover:text-green-400">About Us</a></li>
-                        <li><a href="{{ route('services') }}" class="hover:text-green-400">Services</a></li>
-                        <li><a href="{{ route('contact') }}" class="hover:text-green-400">Contact</a></li>
+                        <li><a href="{{ route('about') }}" class="hover:text-green-400">{{ __('messages.about') }}</a>
+                        </li>
+                        <li><a href="{{ route('services') }}"
+                                class="hover:text-green-400">{{ __('messages.services') }}</a></li>
+                        <li><a href="{{ route('contact') }}"
+                                class="hover:text-green-400">{{ __('messages.contact') }}</a></li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Quotation</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">{{ __('messages.quote') }}</h4>
                     <p class="text-sm mb-3">
 
                     </p>
-                    <a href=""
+                    <a href="{{ route('quote.index') }}"
                         class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md text-white font-medium">
-                        Request a Quote
+                        {{ __('messages.request_quote') }}
                     </a>
                 </div>
             </div>
 
             <!-- Bottom Section -->
             <div class="flex flex-col md:flex-row justify-between items-center mt-8 text-sm text-gray-400">
-                <p>© 2025 LTB Translation. All rights reserved.</p>
+                <p>© 2025 LTB Translation. {{ __('messages.all_rights_reserved') }}</p>
                 <div class="flex space-x-4 mt-2 md:mt-0">
-                    <a href="#" class="hover:text-green-400">Privacy Policy</a>
-                    <a href="#" class="hover:text-green-400">Terms of Service</a>
-                    <a href="#" class="hover:text-green-400">Sitemap</a>
+                    <a href="#" class="hover:text-green-400">{{ __('messages.privacy_policy') }}</a>
+                    <a href="#" class="hover:text-green-400">{{ __('messages.terms_of_service') }}</a>
+                    <a href="#" class="hover:text-green-400">{{ __('messages.sitemap') }}</a>
                 </div>
             </div>
         </div>
