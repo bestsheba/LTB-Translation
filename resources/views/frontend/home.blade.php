@@ -1,4 +1,5 @@
-@extends('layouts.frontend')
+@extends('frontend.layouts.frontend')
+@section('title', 'Home')
 @section('content')
     <section class="relative">
         <div class="container mx-auto pt-24 pb-10 flex flex-col lg:flex-row items-center">

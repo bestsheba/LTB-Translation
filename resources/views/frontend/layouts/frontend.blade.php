@@ -2,15 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'LTB Translation') }}</title>
-
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+    <x-meta-tag />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100">
@@ -22,8 +15,7 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
                 <div>
-                    <a href="{{ url('/') }}"
-                        class="font-bold text-2xl transition">
+                    <a href="{{ url('/') }}" class="font-bold text-2xl transition">
                         <img class="w-60 bg-white" src="{{ asset('logo.png') }}" alt="" srcset="">
                     </a>
                     <p class="text-sm leading-relaxed">

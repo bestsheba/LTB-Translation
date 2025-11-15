@@ -1,5 +1,5 @@
-@extends('layouts.frontend')
-
+@extends('frontend.layouts.frontend')
+@section('title', 'Contact Us')
 @section('content')
     <div class="relative py-12 sm:py-16 lg:py-20 mt-20 bg-indigo-600 mb-8">
         <div class="absolute inset-0 bg-gradient-to-r from-indigo-800 to-indigo-600 opacity-90"></div>
