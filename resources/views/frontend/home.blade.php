@@ -12,7 +12,7 @@
                     {{ __('messages.accurate_reliable_professional') }}
                 </p>
 
-                <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start rtl:ml-4">
                     <a href="{{ route('quote.index') }}"
                         class="px-6 py-3 md:px-8 md:py-4 text-white bg-[#00015B] hover:bg-[#D60F12] rounded-md text-base md:text-lg font-medium transition">
                         {{ __('messages.request_quote') }}
