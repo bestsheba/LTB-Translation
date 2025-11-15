@@ -17,3 +17,6 @@ Route::controller(QuoteController::class)->group(function () {
 });
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+// Load admin routes
+require __DIR__ . '/admin.php';
