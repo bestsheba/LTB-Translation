@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('page_translations', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('page_id')->constrained()->onDelete('cascade');
+            $table->foreignId('language_id')->constrained()->onDelete('cascade');
+            $table->string('title');
+            $table->text('content');
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
             $table->timestamps();
         });
     }
