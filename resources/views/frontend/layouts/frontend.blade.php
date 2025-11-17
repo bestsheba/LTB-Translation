@@ -11,17 +11,17 @@
     <main>
         @yield('content')
     </main>
-    <footer class="bg-gray-900 text-gray-300 pt-12 pb-8">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
-                <div>
-                    <a href="{{ url('/') }}" class="font-bold text-2xl transition">
-                        <img class="w-60 bg-white" src="{{ asset('logo.png') }}" alt="" srcset="">
+    <footer class="bg-gray-900 text-gray-300 pt-10 pb-6 mt-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 border-b border-gray-800 pb-8 md:pb-10">
+                <div class="space-y-4">
+                    <a href="{{ url('/') }}" class="inline-flex items-center">
+                        <img class="w-40 sm:w-48 bg-white rounded-md" src="{{ asset('logo.png') }}" alt="">
                     </a>
-                    <p class="text-sm leading-relaxed">
+                    <p class="text-sm leading-relaxed max-w-xs">
                         {{ __('messages.professional_translation_services') }}
                     </p>
-                    <div class="flex space-x-4 rtl:space-x-reverse mt-4">
+                    <div class="flex space-x-4 rtl:space-x-reverse mt-3">
                         <a href="#" class="hover:text-green-400" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -35,9 +35,9 @@
                 </div>
 
                 <!-- Services -->
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">{{ __('messages.services') }}</h4>
-                    <ul class="space-y-2 text-sm">
+                <div class="space-y-3">
+                    <h4 class="text-base sm:text-lg font-semibold text-white">{{ __('messages.services') }}</h4>
+                    <ul class="space-y-1.5 text-sm">
                         <li><a href="#"
                                 class="hover:text-green-400">{{ __('messages.document_translation_footer') }}</a></li>
                         <li><a href="#" class="hover:text-green-400">{{ __('messages.website_localization') }}</a>
@@ -50,9 +50,9 @@
                 </div>
 
                 <!-- Company -->
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">{{ __('messages.company') }}</h4>
-                    <ul class="space-y-2 text-sm">
+                <div class="space-y-3">
+                    <h4 class="text-base sm:text-lg font-semibold text-white">{{ __('messages.company') }}</h4>
+                    <ul class="space-y-1.5 text-sm">
                         <li><a href="{{ route('about') }}" class="hover:text-green-400">{{ __('messages.about') }}</a>
                         </li>
                         <li><a href="{{ route('services') }}"
@@ -63,22 +63,22 @@
                 </div>
 
                 <!-- Newsletter -->
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">{{ __('messages.quote') }}</h4>
-                    <p class="text-sm mb-3">
-
+                <div class="space-y-3">
+                    <h4 class="text-base sm:text-lg font-semibold text-white">{{ __('messages.quote') }}</h4>
+                    <p class="text-sm mb-2 text-gray-400">
+                        {{ __('messages.accurate_reliable_professional') }}
                     </p>
                     <a href="{{ route('quote.index') }}"
-                        class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md text-white font-medium">
+                        class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md text-white font-medium text-sm sm:text-base">
                         {{ __('messages.request_quote') }}
                     </a>
                 </div>
             </div>
 
             <!-- Bottom Section -->
-            <div class="flex flex-col md:flex-row justify-between items-center mt-8 text-sm text-gray-400">
-                <p>© 2025 LTB Translation. {{ __('messages.all_rights_reserved') }}</p>
-                <div class="flex space-x-4 mt-2 md:mt-0">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-3 mt-6 text-xs sm:text-sm text-gray-400">
+                <p class="text-center md:text-left">© 2025 LTB Translation. {{ __('messages.all_rights_reserved') }}</p>
+                <div class="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-1">
                     <a href="#" class="hover:text-green-400">{{ __('messages.privacy_policy') }}</a>
                     <a href="#" class="hover:text-green-400">{{ __('messages.terms_of_service') }}</a>
                     <a href="#" class="hover:text-green-400">{{ __('messages.sitemap') }}</a>

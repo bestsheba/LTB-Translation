@@ -10,6 +10,7 @@ return [
     'language' => 'Language',
     'english' => 'English',
     'arabic' => 'العربية',
+    'company' => 'Company',
 
     // Home Page
     'lexicology_certified' => 'Lexicology Certified',
