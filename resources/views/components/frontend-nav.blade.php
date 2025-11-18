@@ -55,19 +55,19 @@
     <div x-show="open" x-transition class="sm:hidden bg-white shadow-inner border-t border-gray-100">
         <div class="pt-2 pb-4 space-y-1 rtl:space-y-reverse">
             <x-responsive-nav-link href="{{ url('/') }}" :active="request()->is('/')">
-                Home
+                {{ __('messages.home') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ url('/about') }}" :active="request()->is('about')">
-                About Us
+                {{ __('messages.about') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ url('/services') }}" :active="request()->is('services')">
-                Services
+                {{ __('messages.services') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ url('/quote') }}" :active="request()->is('quote')">
-                Request a Quote
+                {{ __('messages.quote') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ url('/contact') }}" :active="request()->is('contact')">
-                Contact
+                {{ __('messages.contact') }}
             </x-responsive-nav-link>
             <!-- Mobile Language Switcher -->
             <div class="px-4 py-2">

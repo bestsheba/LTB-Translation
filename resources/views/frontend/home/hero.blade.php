@@ -3,9 +3,6 @@
         <div class="w-full lg:w-1/2 text-center lg:text-left">
             <h1
                 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
-                <span class="block mb-1 text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-[#D60F12]">
-                    {{ __('messages.lexicology_certified') }}
-                </span>
                 <span class="block text-[#00015B] mt-2">
                     {{ __('messages.translation_office') }}
                 </span>

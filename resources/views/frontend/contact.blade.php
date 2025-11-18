@@ -36,23 +36,6 @@
                         </div>
                     </div>
 
-                    <!-- Phone -->
-                    <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
-                        <div class="flex-shrink-0">
-                            <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.phone') }}</h3>
-                            <p class="mt-1 text-gray-600">
-                                <a href="tel:0559548756" class="hover:text-indigo-600">0559548756</a>
-                            </p>
-                        </div>
-                    </div>
-
                     <!-- WhatsApp -->
                     <div class="flex items-start space-x-3 [dir='rtl']:space-x-reverse">
                         <div class="flex-shrink-0">
@@ -63,7 +46,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.whatsapp') }}</h3>
+                            <h3 class="text-lg font-medium text-gray-900">{{ __('messages.mobile_whatsapp') }}</h3>
                             <p class="mt-1 text-gray-600">
                                 <a href="https://wa.me/966559548756" target="_blank"
                                     class="hover:text-indigo-600">0559548756</a>
@@ -83,8 +66,8 @@
                         <div>
                             <h3 class="text-lg font-medium text-gray-900">{{ __('messages.email') }}</h3>
                             <p class="mt-1 text-gray-600">
-                                <a href="mailto:lexicologytranslation@gmail.com"
-                                    class="hover:text-indigo-600">lexicologytranslation@gmail.com</a>
+                                <a href="mailto:lexicontranslation@gmail.com"
+                                    class="hover:text-indigo-600">lexicontranslation@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -111,9 +94,9 @@
                 <!-- Google Maps -->
                 <div class="h-[400px] bg-gray-100 rounded-lg overflow-hidden">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7975273596386!2d46.689936!3d24.693830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0x6c9d4d9c9c9c9c9c!2sDabab%20St%2C%20As%20Sulaymaniyah%2C%20Riyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1625123456789!5m2!1sen!2sus"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.2324290115507!2d46.70113007536567!3d24.696857978036423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03735acadc6d%3A0x4a37c93f5f4d2c8e!2sMcDonald&#39;s!5e1!3m2!1sen!2sbd!4v1763473700812!5m2!1sen!2sbd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

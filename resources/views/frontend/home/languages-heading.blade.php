@@ -16,17 +16,17 @@
 
             <div
                 class="group bg-[#00015B] hover:bg-[#D60F12] rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition duration-300 hover:-translate-y-1">
-                <h3 class="font-semibold text-lg text-white">French</h3>
+                <h3 class="font-semibold text-lg text-white">{{ __('messages.french') }}</h3>
             </div>
 
             <div
                 class="group bg-[#00015B] hover:bg-[#D60F12] rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition duration-300 hover:-translate-y-1">
-                <h3 class="font-semibold text-lg text-white">Turkish</h3>
+                <h3 class="font-semibold text-lg text-white">{{ __('messages.turkish') }}</h3>
             </div>
 
             <div
                 class="group bg-[#00015B] hover:bg-[#D60F12] rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition duration-300 hover:-translate-y-1">
-                <h3 class="font-semibold text-lg text-white">Urdu</h3>
+                <h3 class="font-semibold text-lg text-white">{{ __('messages.urdu') }}</h3>
             </div>
         </div>
     </div>

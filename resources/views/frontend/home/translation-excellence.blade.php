@@ -3,14 +3,11 @@
 @endphp
 <section class="py-16">
     <div class="max-w-5xl mx-auto px-6 text-center">
-        <p class="text-xs tracking-[0.3em] uppercase text-[#D60F12] mb-3">
-            {{ $isArabic ? 'ثقة معززة بالخبرة' : 'Certified Excellence' }}
-        </p>
         <h2 class="text-3xl md:text-4xl font-bold text-[#00015B]">
-            {{ $isArabic ? 'ترجمة معتمدة يمكنك الاعتماد عليها' : 'Certified Translation Excellence You Can Trust' }}
+            {{ $isArabic ? 'ثقة معززة بالخبرة' : 'Certified Excellence' }}
         </h2>
-        <p class="mt-2 text-gray-500 text-sm uppercase tracking-wider">
-            {{ $isArabic ? 'مدعومة بخبرة مهنية' : 'Backed by Professional Expertise' }}
+        <p class="text-xl md:text-2xl text-[#D60F12] mb-3">
+            {{ $isArabic ? 'ترجمة معتمدة يمكنك الاعتماد عليها' : 'Certified Translation Excellence You Can Trust' }}
         </p>
     </div>
     <div class="max-w-6xl mx-auto px-6 mt-10 grid lg:grid-cols-2 gap-10 text-gray-700 leading-relaxed">
