@@ -47,15 +47,15 @@
                     'Secure and confidential: A strong emphasis is placed on protecting the privacy of client documents.',
                     'Online and remote services: Services are available remotely, with document submission possible via WhatsApp or email.',
                      ] as $feature)
-                    <div class="flex items-start gap-3 w-full">
-                        <div class="mt-1 !px-1 !py-1 rounded-full bg-[#D60F12]"></div>
+                    <div class="flex items-start gap-1 w-full">
+                        <div class="rounded-full text-[#D60F12] text-4xl" style="line-height: 0.4">•</div>
                         <p>{{ $feature }}</p>
                     </div>
                 @endforeach
             </div>
         </div>
         <div class="relative">
-            <div class="aspect-[3/3] rounded-3xl overflow-hidden shadow-xl bg-gray-200">
+            <div class="aspect-[3/3] rounded-3xl overflow-hidden shadow-xl bg-gray-200" style="aspect-ratio: 3/3">
                 <img src="{{ asset('translation-office.webp') }}" alt="About Lexicology"
                     class="w-full h-full object-cover">
             </div>
