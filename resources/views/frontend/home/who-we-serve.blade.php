@@ -2,9 +2,9 @@
     $isArabic = app()->getLocale() === 'ar';
     $audiences = $isArabic
         ? [
-            ['label' => 'الوزارات الحكومية والسفارات', 'icon' => 'fa-solid fa-building-columns'],
+            ['label' => 'الوزارات والسفارات', 'icon' => 'fa-solid fa-building-columns'],
             ['label' => 'الشركات متعددة الجنسيات والهيئات الدولية', 'icon' => 'fa-solid fa-earth-americas'],
-            ['label' => 'الأعمال المحلية والدولية', 'icon' => 'fa-solid fa-briefcase'],
+            ['label' => 'هيئات وشركات الأعمال المحلية والدولية', 'icon' => 'fa-solid fa-briefcase'],
             ['label' => 'الأفراد الذين يحتاجون إلى ترجمة معتمدة لأغراض رسمية', 'icon' => 'fa-solid fa-user-check'],
         ]
         : [
@@ -20,7 +20,7 @@
 <section class="py-16">
     <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-[#00015B]">
-            {{ $isArabic ? 'من نخدم' : 'Who We Serve' }}
+            {{ $isArabic ? 'الجهات التي نخدمها' : 'Who We Serve' }}
         </h2>
         <p class="text-xl md:text-2xl text-[#D60F12] mb-3">
             {{ $isArabic ? 'شريككم الموثوق في الترجمة المعتمدة' : 'Your Trusted Partner for Certified Translation' }}
