@@ -12,7 +12,6 @@ return [
     'arabic' => 'العربية',
     'french' => 'الفرنسية',
     'turkish' => 'التركية',
-    'urdu' => 'الأردية',
     'company' => 'الشركة',
 
     // Home Page
@@ -81,15 +80,57 @@ return [
     'success_message' => 'شكراً لك! تم تقديم طلب عرض الأسعار الخاص بك بنجاح.',
     'full_name' => 'الاسم الكامل',
     'email_address' => 'عنوان البريد الإلكتروني',
-    'phone_number' => 'رقم الهاتف / WhatsApp',
+    'phone_number' => 'رقم الهاتف / واتساب',
     'document_type' => 'نوع المستند',
     'source_language' => 'لغة المصدر',
     'target_language' => 'اللغة المستهدفة',
     'upload_file' => 'تحميل ملف (اختياري)',
-    'max_file_size' => 'الحد الأقصى لحجم الملف: 10 ميجابايت. الصيغ المدعومة: PDF, DOC, DOCX, TXT, RTF',
+    'max_file_size' => 'الحد الأقصى لحجم الملف: 10 ميجابايت. الصيغ المدعومة: بي دي إف، دوك، دوكس، تي إكس تي، آر تي إف',
     'message' => 'الرسالة / ملاحظات إضافية',
     'submit_request' => 'تقديم الطلب',
     'well_respond_promptly' => 'سنرد عليك بسرعة مع عرض أسعار مفصل ووقت التسليم.',
+    'select_document_type' => 'اختر نوع المستند',
+    'select_source_language' => 'اختر لغة المصدر',
+    'select_target_language' => 'اختر اللغة المستهدفة',
+
+    // Document Types
+    'legal_documents' => 'المستندات القانونية',
+    'academic_documents' => 'المستندات الأكاديمية',
+    'business_documents' => 'المستندات التجارية',
+    'medical_documents' => 'المستندات الطبية',
+    'personal_documents' => 'المستندات الشخصية',
+    'website_app_content' => 'محتوى الموقع/التطبيق',
+    'other' => 'أخرى',
+
+    // File Input
+    'choose_file' => 'اختر ملف',
+    'no_file_chosen' => 'لم يتم اختيار ملف',
+
+    // Services Page - Service Titles
+    'service_legal_translation' => 'الترجمة القانونية',
+    'service_academic_translation' => 'الترجمة الأكاديمية',
+    'service_business_translation' => 'الترجمة التجارية والأعمال',
+    'service_medical_translation' => 'الترجمة الطبية',
+    'service_personal_documents' => 'المستندات الشخصية',
+    'service_website_localization' => 'توطين المواقع والتطبيقات',
+
+    // Services Page - Service Descriptions
+    'service_legal_desc' => 'العقود، الوثائق القضائية، الاتفاقيات',
+    'service_academic_desc' => 'الشهادات، الدبلومات، كشوف الدرجات',
+    'service_business_desc' => 'التقارير، الملفات التعريفية، المواد التسويقية',
+    'service_medical_desc' => 'التقارير، الوصفات الطبية، الأوراق البحثية',
+    'service_personal_desc' => 'جوازات السفر، الهويات، شهادات الميلاد والزواج',
+    'service_website_desc' => 'خدمات توطين المحتوى الرقمي الكاملة',
+
+    // Services Page - Languages
+    'lang_arabic_english' => 'العربية ⇄ الإنجليزية',
+    'lang_arabic_french' => 'العربية ⇄ الفرنسية',
+    'lang_arabic_turkish' => 'العربية ⇄ التركية',
+
+    // Hero Section - Trust Indicators
+    'certified_translators' => 'مترجمون معتمدون',
+    'fast_delivery' => 'تسليم سريع',
+    'quality_guaranteed' => 'جودة مضمونة',
 
     // Contact Page
     'contact_page_title' => 'اتصل بنا',

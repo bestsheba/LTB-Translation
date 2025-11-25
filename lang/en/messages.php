@@ -12,7 +12,6 @@ return [
     'arabic' => 'Arabic',
     'french' => 'French',
     'turkish' => 'Turkish',
-    'urdu' => 'Urdu',
     'company' => 'Company',
 
     // Home Page
@@ -90,6 +89,48 @@ return [
     'message' => 'Message / Additional Notes',
     'submit_request' => 'Submit Request',
     'well_respond_promptly' => 'We\'ll respond promptly with a detailed quotation and delivery time.',
+    'select_document_type' => 'Select document type',
+    'select_source_language' => 'Select source language',
+    'select_target_language' => 'Select target language',
+
+    // Document Types
+    'legal_documents' => 'Legal Documents',
+    'academic_documents' => 'Academic Documents',
+    'business_documents' => 'Business Documents',
+    'medical_documents' => 'Medical Documents',
+    'personal_documents' => 'Personal Documents',
+    'website_app_content' => 'Website/App Content',
+    'other' => 'Other',
+
+    // File Input
+    'choose_file' => 'Choose File',
+    'no_file_chosen' => 'No file chosen',
+
+    // Services Page - Service Titles
+    'service_legal_translation' => 'Legal Translation',
+    'service_academic_translation' => 'Academic Translation',
+    'service_business_translation' => 'Business & Commercial Translation',
+    'service_medical_translation' => 'Medical Translation',
+    'service_personal_documents' => 'Personal Documents',
+    'service_website_localization' => 'Website & App Localization',
+
+    // Services Page - Service Descriptions
+    'service_legal_desc' => 'Contracts, Court Documents, Agreements',
+    'service_academic_desc' => 'Certificates, Diplomas, Transcripts',
+    'service_business_desc' => 'Reports, Profiles, Marketing Materials',
+    'service_medical_desc' => 'Reports, Prescriptions, Research Papers',
+    'service_personal_desc' => 'Passports, IDs, Birth & Marriage Certificates',
+    'service_website_desc' => 'Complete digital content localization services',
+
+    // Services Page - Languages
+    'lang_arabic_english' => 'Arabic ⇄ English',
+    'lang_arabic_french' => 'Arabic ⇄ French',
+    'lang_arabic_turkish' => 'Arabic ⇄ Turkish',
+
+    // Hero Section - Trust Indicators
+    'certified_translators' => 'Certified Translators',
+    'fast_delivery' => 'Fast Delivery',
+    'quality_guaranteed' => 'Quality Guaranteed',
 
     // Contact Page
     'contact_page_title' => 'Contact Us',

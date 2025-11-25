@@ -131,7 +131,7 @@
         ];
     @endphp
     <a href="{{ $button['url'] }}" target="_blank"
-        class="fixed bottom-8 right-5 rounded-full w-[50px] h-[50px] flex justify-center items-center bg-green-500 text-white">
+        class="fixed bottom-8 right-5 rounded-full w-[50px] h-[50px] flex justify-center items-center bg-green-500 text-white z-[9999]">
         <i class="{{ $button['icon'] }} text-2xl"></i>
         <span class="animate-ping absolute inline-flex h-[40px] w-[40px] rounded-full bg-green-400 opacity-75"></span>
     </a>

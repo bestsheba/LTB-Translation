@@ -15,21 +15,20 @@ class QuoteController extends Controller
     public function index(): View
     {
         $documentTypes = [
-            'Legal Documents',
-            'Academic Documents',
-            'Business Documents',
-            'Medical Documents',
-            'Personal Documents',
-            'Website/App Content',
-            'Other'
+            __('messages.legal_documents'),
+            __('messages.academic_documents'),
+            __('messages.business_documents'),
+            __('messages.medical_documents'),
+            __('messages.personal_documents'),
+            __('messages.website_app_content'),
+            __('messages.other')
         ];
 
         $languages = [
-            'Arabic',
-            'English',
-            'French',
-            'Turkish',
-            'Urdu'
+            __('messages.arabic'),
+            __('messages.english'),
+            __('messages.french'),
+            __('messages.turkish'),
         ];
 
         return view('frontend.quote', compact('documentTypes', 'languages'));
