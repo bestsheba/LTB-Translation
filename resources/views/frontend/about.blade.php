@@ -9,18 +9,26 @@
             </h1>
         </div>
     </div>
-    <section>
-        <div class="container mx-auto">
-            <div class="prose prose-lg mx-auto">
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    {{ __('messages.about_description_1') }}
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    {{ __('messages.about_description_2') }}
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    {{ __('messages.about_description_3') }}
-                </p>
+    <section class="py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- About Image -->
+                <div class="order-2 md:order-1">
+                    <img src="{{ asset('about.jpeg') }}" alt="About Us"
+                        class="rounded-lg shadow-lg w-full h-auto object-cover">
+                </div>
+                <!-- About Text -->
+                <div class="order-1 md:order-2 prose prose-lg">
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        {{ __('messages.about_description_1') }}
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        {{ __('messages.about_description_2') }}
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        {{ __('messages.about_description_3') }}
+                    </p>
+                </div>
             </div>
         </div>
     </section>
