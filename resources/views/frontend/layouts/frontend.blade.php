@@ -23,14 +23,17 @@
                         {{ __('messages.professional_translation_services') }}
                     </p>
                     <div class="flex space-x-4 rtl:space-x-reverse mt-3">
-                        <a href="#" class="hover:text-[#E31E24]" aria-label="Facebook">
+                        <a href="https://www.facebook.com/LexicologyTranslation/" target="_blank"
+                            class="hover:text-[#E31E24]" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="hover:text-[#E31E24]" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://x.com/ltbtrasnlation" target="_blank" class="hover:text-[#E31E24]"
+                            aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a href="#" class="hover:text-[#E31E24]" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
+                        <a href="https://www.instagram.com/ltbtranslationoffice/" target="_blank"
+                            class="hover:text-[#E31E24]" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>

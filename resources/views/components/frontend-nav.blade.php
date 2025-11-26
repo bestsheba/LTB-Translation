@@ -4,15 +4,15 @@
         <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex justify-between items-center">
             <!-- Social Icons -->
             <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                <a href="#"
+                <a href="https://www.instagram.com/ltbtranslationoffice/" target="_blank"
                     class="w-6 h-6 flex items-center justify-center bg-[#E31E24] text-white rounded hover:bg-[#c4191f] transition-colors">
                     <i class="fab fa-instagram text-xs"></i>
                 </a>
-                <a href="#"
+                <a href="https://www.facebook.com/LexicologyTranslation/" target="_blank"
                     class="w-6 h-6 flex items-center justify-center bg-[#E31E24] text-white rounded hover:bg-[#c4191f] transition-colors">
                     <i class="fab fa-facebook-f text-xs"></i>
                 </a>
-                <a href="#"
+                <a href="https://x.com/ltbtrasnlation" target="_blank"
                     class="w-6 h-6 flex items-center justify-center bg-[#E31E24] text-white rounded hover:bg-[#c4191f] transition-colors">
                     <i class="fa-brands fa-x-twitter text-xs"></i>
                 </a>
