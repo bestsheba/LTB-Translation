@@ -8,7 +8,7 @@
 
 <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100">
     @include('components.frontend-nav')
-    <main>
+    <main class="pt-[110px]">
         @yield('content')
     </main>
     <footer class="bg-gray-900 text-gray-300 pt-10 pb-6 mt-10">
@@ -23,13 +23,13 @@
                         {{ __('messages.professional_translation_services') }}
                     </p>
                     <div class="flex space-x-4 rtl:space-x-reverse mt-3">
-                        <a href="#" class="hover:text-green-400" aria-label="Facebook">
+                        <a href="#" class="hover:text-[#E31E24]" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="hover:text-green-400" aria-label="Twitter">
+                        <a href="#" class="hover:text-[#E31E24]" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="hover:text-green-400" aria-label="LinkedIn">
+                        <a href="#" class="hover:text-[#E31E24]" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -42,22 +42,22 @@
                     </h4>
                     <ul class="space-y-1.5 text-sm">
                         <li>
-                            <a href="#" class="hover:text-green-400">
+                            <a href="#" class="hover:text-[#E31E24]">
                                 {{ __('messages.document_translation_footer') }}
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-green-400">
+                            <a href="#" class="hover:text-[#E31E24]">
                                 {{ __('messages.website_localization') }}
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-green-400">
+                            <a href="#" class="hover:text-[#E31E24]">
                                 {{ __('messages.subtitling_transcription') }}
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-green-400">
+                            <a href="#" class="hover:text-[#E31E24]">
                                 {{ __('messages.certified_translations_footer') }}
                             </a>
                         </li>
@@ -71,17 +71,17 @@
                     </h4>
                     <ul class="space-y-1.5 text-sm">
                         <li>
-                            <a href="{{ route('about') }}" class="hover:text-green-400">
+                            <a href="{{ route('about') }}" class="hover:text-[#E31E24]">
                                 {{ __('messages.about') }}
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('services') }}" class="hover:text-green-400">
+                            <a href="{{ route('services') }}" class="hover:text-[#E31E24]">
                                 {{ __('messages.services') }}
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('contact') }}" class="hover:text-green-400">
+                            <a href="{{ route('contact') }}" class="hover:text-[#E31E24]">
                                 {{ __('messages.contact') }}
                             </a>
                         </li>
@@ -97,7 +97,7 @@
                         {{ __('messages.accurate_reliable_professional') }}
                     </p>
                     <a href="{{ route('quote.index') }}"
-                        class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md text-white font-medium text-sm sm:text-base">
+                        class="inline-flex items-center justify-center bg-[#E31E24] hover:bg-[#c4191f] px-4 py-2 rounded-md text-white font-medium text-sm sm:text-base transition-colors">
                         {{ __('messages.request_quote') }}
                     </a>
                 </div>
@@ -110,31 +110,30 @@
                     {{ __('messages.all_rights_reserved') }}
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-1">
-                    <a href="#" class="hover:text-green-400">
+                    <a href="#" class="hover:text-[#E31E24]">
                         {{ __('messages.privacy_policy') }}
                     </a>
-                    <a href="#" class="hover:text-green-400">
+                    <a href="#" class="hover:text-[#E31E24]">
                         {{ __('messages.terms_of_service') }}
                     </a>
-                    <a href="#" class="hover:text-green-400">
+                    <a href="#" class="hover:text-[#E31E24]">
                         {{ __('messages.sitemap') }}
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    @php
-        $button = [
-            'icon' => 'fab fa-whatsapp',
-            'url' => 'https://wa.me/966559548756',
-            'external' => true,
-        ];
-    @endphp
-    <a href="{{ $button['url'] }}" target="_blank"
-        class="fixed bottom-8 right-5 rounded-full w-[50px] h-[50px] flex justify-center items-center bg-green-500 text-white z-[9999]">
-        <i class="{{ $button['icon'] }} text-2xl"></i>
-        <span class="animate-ping absolute inline-flex h-[40px] w-[40px] rounded-full bg-green-400 opacity-75"></span>
-    </a>
+    <div class="fixed bottom-8 right-5 z-[9999] flex flex-col gap-3">
+        <a href="https://wa.me/966559548756" target="_blank"
+            class="rounded-full w-[50px] h-[50px] flex justify-center items-center bg-green-500 text-white relative shadow-lg hover:bg-green-600 transition-colors">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+        </a>
+        <a href="tel:+966559548756"
+            class="rounded-full w-[50px] h-[50px] flex justify-center items-center bg-blue-500 text-white shadow-lg hover:bg-blue-600 transition-colors">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
     @stack('script')
 </body>
 

@@ -1,10 +1,37 @@
-<nav x-data="{ open: false }" class="bg-white shadow-md fixed w-full z-50 top-0 left-0  py-2">
+<nav x-data="{ open: false }" class="bg-white shadow-md fixed w-full z-50 top-0 left-0">
+    <!-- Topbar -->
+    <div class="bg-white border-b border-gray-100">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex justify-between items-center">
+            <!-- Social Icons -->
+            <div class="flex items-center space-x-2 rtl:space-x-reverse">
+                <a href="#"
+                    class="w-6 h-6 flex items-center justify-center bg-[#E31E24] text-white rounded hover:bg-[#c4191f] transition-colors">
+                    <i class="fab fa-instagram text-xs"></i>
+                </a>
+                <a href="#"
+                    class="w-6 h-6 flex items-center justify-center bg-[#E31E24] text-white rounded hover:bg-[#c4191f] transition-colors">
+                    <i class="fab fa-facebook-f text-xs"></i>
+                </a>
+                <a href="#"
+                    class="w-6 h-6 flex items-center justify-center bg-[#E31E24] text-white rounded hover:bg-[#c4191f] transition-colors">
+                    <i class="fa-brands fa-x-twitter text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Phone Number -->
+            <a href="tel:0556692811"
+                class="flex items-center gap-2 text-[#00015B] hover:text-[#E31E24] transition-colors text-sm font-medium">
+                <span>0556692811</span>
+                <i class="fas fa-phone transform scale-x-[-1]"></i>
+            </a>
+        </div>
+    </div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <!-- Left: Logo -->
             <div class="flex items-center space-x-8 rtl:space-x-reverse">
                 <a href="{{ url('/') }}"
-                    class="flex items-center font-bold text-2xl text-indigo-700 hover:text-indigo-800 transition">
+                    class="flex items-center font-bold text-2xl text-[#00015B] hover:text-[#E31E24] transition">
                     <img class="w-60" src="{{ asset('logo.png') }}" alt="" srcset="">
                 </a>
                 <div class="hidden sm:flex items-center sm:space-x-6 rtl:space-x-reverse">
@@ -35,7 +62,7 @@
 
                 <!-- Mobile Menu Button -->
                 <button @click="open = !open"
-                    class="p-2 rounded-md text-gray-600 hover:text-indigo-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition sm:hidden">
+                    class="p-2 rounded-md text-gray-600 hover:text-[#E31E24] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#E31E24] transition sm:hidden">
                     <span class="sr-only">Toggle navigation</span>
                     <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

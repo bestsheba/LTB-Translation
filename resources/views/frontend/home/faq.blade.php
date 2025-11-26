@@ -8,7 +8,7 @@
                     <h3 class="text-lg font-semibold text-gray-900">
                         {{ __('messages.how_long_translation') }}
                     </h3>
-                    <span class="text-indigo-600 transition-transform group-open:rotate-180">
+                    <span class="text-[#E31E24] transition-transform group-open:rotate-180">
                         ▼
                     </span>
                 </summary>
@@ -22,7 +22,7 @@
                     <h3 class="text-lg font-semibold text-gray-900">
                         {{ __('messages.which_languages') }}
                     </h3>
-                    <span class="text-indigo-600 transition-transform group-open:rotate-180">
+                    <span class="text-[#E31E24] transition-transform group-open:rotate-180">
                         ▼
                     </span>
                 </summary>
@@ -36,7 +36,7 @@
                     <h3 class="text-lg font-semibold text-gray-900">
                         {{ __('messages.certified_translations_question') }}
                     </h3>
-                    <span class="text-indigo-600 transition-transform group-open:rotate-180">
+                    <span class="text-[#E31E24] transition-transform group-open:rotate-180">
                         ▼
                     </span>
                 </summary>
@@ -50,7 +50,7 @@
                     <h3 class="text-lg font-semibold text-gray-900">
                         {{ __('messages.how_request_quote') }}
                     </h3>
-                    <span class="text-indigo-600 transition-transform group-open:rotate-180">
+                    <span class="text-[#E31E24] transition-transform group-open:rotate-180">
                         ▼
                     </span>
                 </summary>
