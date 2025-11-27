@@ -5,6 +5,7 @@
 <title>@yield('title') - {{ config('app.name', 'LTB Translation') }}</title>
 
 <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 <style>

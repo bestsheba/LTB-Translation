@@ -13,12 +13,12 @@ return [
 
     'languages' => [
         'en' => [
-            'name' => 'English',
-            'native' => 'English',
+            'name' => 'إنجليزي',
+            'native' => 'إنجليزي',
             'direction' => 'ltr',
         ],
         'ar' => [
-            'name' => 'Arabic',
+            'name' => 'العربية',
             'native' => 'العربية',
             'direction' => 'rtl',
         ],

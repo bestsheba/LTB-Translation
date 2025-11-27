@@ -2,7 +2,9 @@
     <button class="flex items-center space-x-2 rtl:space-x-reverse px-3 py-2 rounded-lg hover:bg-gray-200 transition duration-300">
         <i class="fas fa-globe text-gray-700"></i>
         <span
-            class="text-gray-700 font-medium">{{ config('languages.languages.' . app()->getLocale() . '.name') }}</span>
+            class="text-gray-700 font-medium">
+            {{ config('languages.languages.' . app()->getLocale() . '.name') }}
+        </span>
         <i class="fas fa-chevron-down text-gray-600 text-sm"></i>
     </button>
 

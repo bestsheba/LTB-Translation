@@ -137,6 +137,7 @@
             <i class="fas fa-phone text-xl"></i>
         </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     @stack('script')
 </body>
 

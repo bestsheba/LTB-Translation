@@ -2,6 +2,7 @@
 @section('title', __('messages.home'))
 @section('content')
     @include('frontend.home.hero')
+    @include('frontend.home.slider')
     @include('frontend.home.about-us')
     @include('frontend.home.translation-excellence')
     @include('frontend.home.key-advantages')

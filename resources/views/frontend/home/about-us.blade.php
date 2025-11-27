@@ -97,14 +97,14 @@
 
         <div class="relative">
             <div class="aspect-[3/3] rounded-3xl overflow-hidden shadow-xl bg-gray-200" style="aspect-ratio: 3/3">
-                <img src="{{ asset('translation-office.webp') }}" alt="About Lexicology"
+                <img src="{{ asset('about.jpeg') }}" alt="About Lexicology"
                     class="w-full h-full object-cover">
             </div>
             <div class="absolute -bottom-6 -left-6 bg-white shadow-lg rounded-2xl p-6 max-w-xs">
                 <p class="text-xs uppercase text-gray-500 tracking-wide mb-2">
                     {{ $isArabic ? 'خبرة معتمدة' : 'Certified Expertise' }}
                 </p>
-                <p class="text-2xl font-bold text-[#00015B]">15+</p>
+                <p class="text-2xl font-bold text-[#00015B]">27+</p>
                 <p class="text-sm text-gray-600">
                     {{ $isArabic ? 'سنوات من الثقة في خدمات الترجمة' : 'Years delivering trusted translations' }}
                 </p>
