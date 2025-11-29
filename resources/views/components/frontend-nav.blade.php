@@ -19,9 +19,9 @@
             </div>
 
             <!-- Phone Number -->
-            <a href="tel:0556692811"
+            <a href="tel:0559548756"
                 class="flex items-center gap-2 text-[#00015B] hover:text-[#E31E24] transition-colors text-sm font-medium">
-                <span>0556692811</span>
+                <span>0559548756</span>
                 <i class="fas fa-phone transform scale-x-[-1]"></i>
             </a>
         </div>

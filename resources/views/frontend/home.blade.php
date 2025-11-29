@@ -5,6 +5,7 @@
     @include('frontend.home.slider')
     @include('frontend.home.about-us')
     @include('frontend.home.translation-excellence')
+    @include('frontend.home.four-steps')
     @include('frontend.home.key-advantages')
     @include('frontend.home.specialized-services')
     @include('frontend.home.who-we-serve')
